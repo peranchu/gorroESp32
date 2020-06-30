@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Carga  UIKIT-->
+    <link rel="stylesheet" href="uikit.min.css" />
+    <script src="uikit.min.js"></script>
+    <script src="uikit-icons.min.js"></script>
+
+
+    <title>Control Módulo Esp32</title>
+</head>
+
+<body>
+    <div class="uk-container uk-container-center uk-margin-top">
+        <h1 class="uk-text-lead uk-text-success uk-text-center">Control Módulo</h1>
+
+        <div class="uk-card uk-card-default uk-card-body">
+            <div class="js-upload uk-placeholder uk-text-center">
+                <span uk-icon="icon: cloud-upload"></span>
+                <span class="uk-text-middle">Arrastra o</span>
+                <div uk-form-custom>
+                    <input type="file">
+                    <span class="uk-link">seleciona un archivo de audio</span>
+                </div>
+            </div>
+
+            <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+        </div>
+    </div>
+
+
+    <div class="uk-container uk-container-center uk-margin-top">
+        <h1 class="uk-text-lead">Reproductor</h1>
+        <div class="uk-card uk-card-default uk-card-body">
+
+            <button class="uk-button uk-button-primary" id="peticion">AJAX</button>
+            <div class="uk-section" id="respuesta">
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="upload.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
